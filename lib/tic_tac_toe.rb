@@ -46,7 +46,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index, player)
+    move(board, index, current_player(board))
     display_board(board)
   else
     turn(board)
@@ -57,7 +57,7 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-def player(board)
+def current_player(board)
   turn_count(board) % 2 == 0? "X" : "O"
 end
 
