@@ -47,7 +47,7 @@ describe './lib/tic_tac_toe.rb' do
 
       play(board)
 
-      expect(board).to match_array([" ", " ", " ", " ", " ", " ", "X", "X", "X"])
+      expect(board).to match_array([" ", " ", " ", " ", " ", " ", "O", "X", "X"])
     end
 
     it 'checks if the game is won after every turn' do
