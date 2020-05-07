@@ -26,7 +26,7 @@ def move(board, index, player)
 end
 
 def position_taken? (board, index)
- board[index] == "X" || board[index] == "O" 
+ board[index] == "X" || board[index] == "O"
 end
 
 def valid_move?(board, index)
@@ -47,10 +47,6 @@ def turn(board)
   else
     turn(board)
   end
-end
-
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
 end
 
 def current_player(board)
