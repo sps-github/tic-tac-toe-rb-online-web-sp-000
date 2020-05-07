@@ -125,7 +125,6 @@ def play(board)
     turn(board)
   end
   if won?(board)
-    winner(board) == "X" || winner(board) == "O"
     puts "Congratulations #{winner(board)}!"
   else draw?(board)
     puts "Cat's Game!"
